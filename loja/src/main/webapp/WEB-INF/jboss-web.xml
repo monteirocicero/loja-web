@@ -1,0 +1,3 @@
+<jboss-web>
+	<context-root>loja-jm</context-root>
+</jboss-web>
