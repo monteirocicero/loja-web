@@ -98,7 +98,7 @@ public class Pedido implements Serializable {
 		return null;
 	}
 	
-	private void calcularTotal() {
+	public void calcularTotal() {
 		valorTotal = 0D;
 		for (ItemPedido item : getItens()) {
 			valorTotal += item.getPrecoTotal();
@@ -192,9 +192,9 @@ public class Pedido implements Serializable {
 	}
 	
 	@Override
-	  public String toString() {
+	 public String toString() {
 	    return "Pedido [id=" + id + ", data=" + data + ", cliente=" + cliente
 	        + ", itens=" + itens + ", valorTotal=" + valorTotal + "]";
-	  }
+	 }
 
 }
