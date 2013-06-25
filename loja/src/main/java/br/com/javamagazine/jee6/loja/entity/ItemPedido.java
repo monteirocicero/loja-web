@@ -94,13 +94,7 @@ public class ItemPedido implements Serializable, Comparable<ItemPedido> {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result
-				+ ((precoTotal == null) ? 0 : precoTotal.hashCode());
-		result = prime * result
-				+ ((precoUnitario == null) ? 0 : precoUnitario.hashCode());
 		result = prime * result + ((produto == null) ? 0 : produto.hashCode());
-		result = prime * result
-				+ ((quantidade == null) ? 0 : quantidade.hashCode());
 		return result;
 	}
 
@@ -113,25 +107,10 @@ public class ItemPedido implements Serializable, Comparable<ItemPedido> {
 		if (getClass() != obj.getClass())
 			return false;
 		ItemPedido other = (ItemPedido) obj;
-		if (precoTotal == null) {
-			if (other.precoTotal != null)
-				return false;
-		} else if (!precoTotal.equals(other.precoTotal))
-			return false;
-		if (precoUnitario == null) {
-			if (other.precoUnitario != null)
-				return false;
-		} else if (!precoUnitario.equals(other.precoUnitario))
-			return false;
 		if (produto == null) {
 			if (other.produto != null)
 				return false;
 		} else if (!produto.equals(other.produto))
-			return false;
-		if (quantidade == null) {
-			if (other.quantidade != null)
-				return false;
-		} else if (!quantidade.equals(other.quantidade))
 			return false;
 		return true;
 	}
